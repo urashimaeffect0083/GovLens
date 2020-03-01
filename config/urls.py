@@ -30,6 +30,7 @@ urlpatterns = [
     #    url(r'^$', AgencyListView.as_view(), name='index'),
     url(r"^$", HomeView.as_view(), name="index"),
     url(r"^agency/(?P<pk>[0-9]+)/$", AgencyView.as_view(), name="agency-detail"),
+    url('listings/', include('listings.urls')),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

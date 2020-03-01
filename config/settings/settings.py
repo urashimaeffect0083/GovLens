@@ -72,6 +72,7 @@ INSTALLED_APPS = [
     "apps.civic_pulse",
     "rest_framework",
     "rest_framework.authtoken",
+    "listings.apps.ListingsConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",

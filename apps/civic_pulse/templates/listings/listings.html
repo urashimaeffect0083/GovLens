@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<h1>Listing Agencys</h1>
+
+{% if agencys %}
+    {% for agency in agencys %}
+    <div> 
+        <div>
+            id: {{ agency.id }},  name: {{ agency.name }} 
+        </div>
+        
+    </div>
+        
+    {% endfor %}
+{% else %}
+    <div>
+    <p>No Listing Available</p>
+    </div>
+
+{% endif %} 
+
+
+{% endblock content %}

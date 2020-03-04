@@ -11,4 +11,4 @@ def index(request):
     }
 
     return render(request, 'listings/listings.html', context)
-    # return render(request, 'listings/listings.html')
+    

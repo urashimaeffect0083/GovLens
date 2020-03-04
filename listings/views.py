@@ -5,7 +5,7 @@ from .models import Agency
 def index(request): 
     
     agencys = Agency.objects.all()
-    
+
     context = {
         'agencys': agencys
     }
